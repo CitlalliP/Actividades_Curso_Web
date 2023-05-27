@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticketero</title>
+</head>
+<body>
+    <h1>Ticketero</h1>
+    <p>Bienvenidx a la página en donde encontraras todos los conciertos de tus artistas 
+       <br>favoritos, y debido a nuestro sistema no debes de preocuparte por quedarte sin boleto. 
+       <br> ¡Adquiere ahora tus boletos!</p>
+    <center><img src="https://www.bbva.com/wp-content/uploads/2020/05/festival2.jpg" alt="P6" width="420" height="350"></center>
+    <hr>
+    <br><br>
+    <form>
+        <fieldset>
+            <legend>Compra de boletos</legend>
+            <label>Nombre(s):
+                <input type="text" name="nombre" required autocomplete="on"> 
+            </label>
+            <br><br>
+            <label>Apellido:
+                <input type="text" name="apellido" required autocomplete="on"> 
+            </label>
+            <br><br>
+            <label for="Artista">Artista:</label>
+            <select id="Artista">
+                <option value=""></option>
+                <option value="TSwift">Taylor Swift</option>
+                <option value="BBunny">Bad Bunny</option>
+                <option value="Morat">Morat</option>
+                <option value="HStyles">Harry Styles</option>
+            </select>
+            <br><br>
+            <label>Fecha del concierto:
+                <input type="date" name="fecha" required>
+            </label>
+            <br><br>
+            <label for="lugar">Auditorio o sala de concierto:</label>
+            <select id="lugar">
+                <option value=""></option>
+                <option value="sol">Foro Sol</option>
+                <option value="deportes">Palacio de los Deportes</option>
+                <option value="nacional">Auditorio Nacional</option>
+                <option value="azteca">Estadio Azteca</option>
+                <option value="arena">Arena Ciudad de México</option>
+            </select>
+            <br><br>
+            <label>Zona:
+                <br>
+                <input type="radio" name="zona" value="VIP">VIP
+                <br>
+                <input type="radio" name="zona" value="Preferente">Preferente
+                <br>
+                <input type="radio" name="zona" value="Balcon">Balcón
+                <br>
+                <input type="radio" name="zona" value="General">General
+            </label>
+            <br><br>
+            <label>Número de boletos:
+                <input type="number"><!--colocar if en php para el numero de boletos-->
+            </label>
+            <br><br>
+            <label>Elige algunos extras para mejorar tu experiencia:
+                <input type="checkbox" name="extra" value="bebidas">Bebidas
+                <input type="checkbox" name="extra" value="comida">Paquete de comida
+                <input type="checkbox" name="extra" value="">
+                <input type="checkbox" name="extra" value="torrejas">
+            </label>
+            <br><br>
+            <button type="reset">Borrar</button>
+            <button type="submit">Comprar</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>
